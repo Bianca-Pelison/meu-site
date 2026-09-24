@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background-color: #d71920;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.inicio {
+    background-color: #eeeeee;
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio h2 {
+    font-size: 45px;
+    color: #d71920;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    max-width: 600px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #d71920;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a80000;
+}
+
+#historia {
+    background-color: white;
+}
+
+#historia h2,
+#titulos h2,
+#contato h2 {
+    color: #d71920;
+    margin-bottom: 20px;
+}
+
+#historia p {
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #d71920;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #d71920;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .inicio h2 {
+        font-size: 32px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
